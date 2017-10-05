@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Second project: a portfolio site</title>
+  <link href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,500|Roboto:100,300,400,400i|Work+Sans:100,200,300,400,500,600" rel="stylesheet">
+  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
+  <link rel="stylesheet" href="css/main.css" />
+
+</head>
+<body>
+  <div class="container">
+    <header class="main_header">
+      <div class="logo_img">
+        <img src="images/logo-udacity.svg" alt="Udacity logo image">
+      </div>
+      <div class="header_name">
+        <h1>Jane Doette</h1>
+        <p>Front-end ninja</p>
+      </div>
+      <div onclick="myFunction()" class="drop_button">
+        &#9776;
+      </div>
+    </header>
+    <nav id="my_navigation" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">About</a></li>
+        <li class="nav__item"><a href="#portfolio">Portfolio</a></li>
+        <li class="nav__item"><a href="#contacts">Contacts</a></li>
+        <li class="nav__item"><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="front_page_photo">
+      <picture>
+        <source media="(min-width: 950px)" srcset="images/page_image_large_1x.jpg 1x, images/page_image_large_2x.jpg 2x">
+        <source media="(min-width: 750px)" srcset="images/page_image_medium_1x.jpg 1x, images/page_image_medium_2x.jpg 2x">
+        <img src="images/page_image_small_1x.jpg" alt="HTML code image">
+      </picture>
+    </div>
+    <h2 class="project_header">Featured Work</h2>
+    <section class="projects_list" id="portfolio">
+      <div class="appify project">
+        <picture>
+          <source media="(min-width: 950px)" srcset="images/Appify_image_large_1x.jpg 1x, images/Appify_image_large_2x.jpg 2x">
+          <source media="(min-width: 750px)" srcset="images/Appify_image_medium_1x.jpg 1x, images/Appify_image_medium_2x.jpg 2x">
+          <img src="images/Appify_image_small.jpg" alt="Apple store application image">
+        </picture>
+        <h2>Appify</h2>
+        <a href="https://github.com/udacity/Appify/">https://github.com/udacity/Appify/</a>
+      </div>
+      <div class="sunflower project">
+        <picture>
+          <source media="(min-width: 950px)" srcset="images/sunflower_image_large_1x.jpg 1x, images/sunflower_image_large_2x.jpg 2x">
+          <source media="(min-width: 750px)" srcset="images/sunflower_image_medium_1x.jpg 1x, images/sunflower_image_medium_2x.jpg 2x">
+          <img src="images/sunflower_image_small_1x.jpg" alt="Beutifull sunflower whith black background ">
+        </picture>
+        <h2>Sunflower</h2>
+        <a href="https://github.com/udacity/Sunflower/">https://github.com/udacity/Sunflower/</a>
+      </div>
+      <div class="bokeh project">
+        <picture>
+          <source media="(min-width: 950px)" srcset="images/bokeh_image_large_1x.jpg 1x, images/bokeh_image_large_2x.jpg 2x">
+          <source media="(min-width: 750px)" srcset="images/bokeh_image_medium_1x.jpg 1x, images/bokeh_image_medium_2x.jpg 2x">
+          <img src="images/bokeh_image_small_1x.jpg" alt="Bokeh image">
+        </picture>
+        <h2>Bokeh</h2>
+        <a href="https://github.com/udacity/Bokeh/">https://github.com/udacity/Bokeh/</a>
+      </div>
+    </section>
+    <footer>
+      <ul id="contacts">
+        <li><a href="#" class="zocial-email">Contact me</a></li>
+        <li><a href="#" class="zocial-twitter">Twitter</a></li>
+        <li><a href="#" class="zocial-facebook">Facebook</a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
